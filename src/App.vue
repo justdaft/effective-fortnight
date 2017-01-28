@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <md-toolbar>
-      <h1 class="md-title">Expert-Spork</h1>
+      <h1 class="md-title">effective-fortnight</h1>
     </md-toolbar>
     <md-card>
       <md-card-header>
