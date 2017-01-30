@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <md-card>
+        <md-card >
             <md-card-media>
                 <!--<img src="assets/card-image-1.jpg" alt="People">-->
             </md-card-media>
@@ -11,19 +11,20 @@
                     {{user.name}}
                 </div>
                 <div class="md-subhead">Registered: {{user.registered}}</div>
-                 <div class="md-subhead">Age: {{user.age}}</div>
-                  <div class="md-subhead">User Name: {{user.userName}}</div>
+                <div class="md-subhead">Age: {{user.age}}</div>
+                <div class="md-subhead">User Name: {{user.userName}}</div>
             </md-card-header>
 
             <md-card-actions>
-                <md-button v-on:click="registerUser(user)">Register</md-button>
-                <md-button v-on:click="unRegisterUser(user)">UnRegister</md-button>
+                <md-button class="md-primary md-raised btn" v-if="!user.registered" v-on:click="registerUser(user)">Register</md-button>
+                <md-button class="md-primary md-raised btn" v-if="user.registered" v-on:click="unRegisterUser(user)">UnRegister</md-button>
             </md-card-actions>
+            <md-card-content class="star-six">
 
-            <md-card-content>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea, nostrum odio. Dolores, sed accusantium quasi non,
-                voluptas eius illo quas, saepe voluptate pariatur in deleniti minus sint. Excepturi.
-            </md-card-content>
+            </md-card-content >
+            <!--<md-card-content class="square">
+
+            </md-card-content >-->
         </md-card>
     </div>
 </template>
@@ -47,5 +48,15 @@
 </script>
 
 <style scoped>
+.btn {
+    width: 120px;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+
 
 </style>

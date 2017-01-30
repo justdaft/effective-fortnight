@@ -2,9 +2,9 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 Vue.use(Vuex)
 
-let users = [{ name: 'Amy', age: 5, userName: 'AmyPrime', registered: true },
-{ name: 'Oscar', age: 5, userName: 'OscarPrime', registered: false },
-{ name: 'Dexter', age: 7, userName: 'DexterPrime', registered: false }]
+let users = [{ name: 'Amy', age: 5, userName: 'AmyPrime', registered: true, theme: 'purple'},
+{ name: 'Oscar', age: 5, userName: 'OscarPrime', registered: false, theme: 'red'},
+{ name: 'Dexter', age: 7, userName: 'DexterPrime', registered: false, theme: 'blue' }]
 
 
 export default new Vuex.Store({
